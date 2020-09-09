@@ -105,9 +105,9 @@ module.exports = {
                     units: { seconds: "seconds", minutes: "minutes", hours: "hours", days: "days" }
                 }
             }
-            if(!guildChannel || !(guildChannel instanceof Discord.Channel)){
+          /*  if(!guildChannel || !(guildChannel instanceof Discord.Channel)){
                 return reject(guildChannel+" is not a valid guildchannel.");
-            }
+            } */
             if(!options.time || isNaN(options.time)){
                 return reject(options.time+" is not a number.");
             }
